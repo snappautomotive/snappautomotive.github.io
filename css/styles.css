@@ -1,0 +1,178 @@
+/*SnappMobile */
+
+/*September 2018*/
+
+/* Reset default*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+a,
+abbr,
+address,
+aside,
+dfn,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+tr,
+th,
+td,
+article,
+canvas,
+details,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    -webkit-text-size-adjust: none;
+}
+
+/* Box Model */
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Containers */
+
+.container {
+    width: 100%;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 30% 1fr 1fr;
+    grid-template-rows: 25% repeat(2, 1fr) 15%;
+    grid-gap: 0.8rem;
+}
+
+body {
+    font-family: "OverpassMono", monospace;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+header {
+    background-color: #4640f2;
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+section {
+    text-align: left;
+}
+
+.content-1 {
+    background-color: #4640f2;
+    grid-row: 2 / 3;
+    grid-column: 2 / 4;
+}
+
+footer {
+    background-color: #ffffff;
+    grid-row: 4 / 5;
+    grid-column: 1 / 4;
+}
