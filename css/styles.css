@@ -166,8 +166,37 @@ header {
     grid-row: 1 / 2;
     grid-column: 1 / -1;
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  
+  .logo img {
+    width: 222px;
+    height: 44px;
+  }
+
+  ul.social.icons li {
+    display: inline-block;
+    padding: 0 0 0 1em;
+  }
+
+.social.icons img {
+    width: 44px;
+    height: 44px;
 }
 
 h1 {
