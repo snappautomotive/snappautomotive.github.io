@@ -216,9 +216,6 @@ section {
 }
 */
 
-button {
-    grid-area: footer;
-}
 
 footer {
     background-color: #ffffff;
