@@ -216,6 +216,23 @@ section {
 }
 */
 
+button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    text-decoration: none;
+    text-transform: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--brand-color);
+    background-color: #ffffff;
+    border-style: none;
+    border-radius: 39.5px;
+    box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.1);
+  
+}
 
 footer {
     background-color: #ffffff;
