@@ -294,11 +294,25 @@ footer {
     background-color: #ffffff;
     color: var(--brand-color);
     grid-row: 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr 20%;
+}
+
+footer h2 {
+    font-weight: 600;
+}
+
+.contacts, .copyright {
     padding-left: 119px;
     padding-right: 97px;
     padding-top: 65px;
 }
 
-footer h2 {
-    font-weight: 600;
+.contact-info img {
+    width: 48px;
+    height: 48px;
+}
+
+.copyright {
+    background: #fafafa;
 }
