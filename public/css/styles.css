@@ -138,12 +138,23 @@ body {
 
 /* Containers */
 
-.container {
+#page-1.container {
     width: 100%;
     display: grid;
     margin-left: auto;
     margin-right: auto;
     grid-template-rows: 2fr 1fr;
+    grid-gap: 0rem;
+    
+}
+
+#page-2.container {
+    width: 100%;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-rows: 3fr 6fr 1fr;
+    grid-template-columns: none;
     grid-gap: 0rem;
     
 }
@@ -160,7 +171,7 @@ body {
 
 }
 
-main {
+#main-1 {
     grid-row: 1/2;
     display: grid;
     grid-template-columns: 70% 1fr;
@@ -173,7 +184,16 @@ main {
     background-size: cover;
 }
 
-header {
+#main-2 {
+    grid-row: 2/3; 
+    padding-top: 69px;
+    padding-left: 119px;
+    padding-right: 97px;
+   
+}
+
+
+#header-1 {
     grid-row: 1 / 2;
     grid-column: 1 / -1;
     display: flex;
@@ -181,6 +201,28 @@ header {
     justify-content: space-between;
     
 }
+
+.icons-wrapper {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#header-2 {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 69px;
+    padding-left: 119px;
+    padding-right: 97px;
+    background: linear-gradient(114deg, rgba(92,91,255, 0.7), 
+    rgba(70,64,242, 0.7)), url('../assets/bg-header.svg');
+    background-size: cover;
+}
+
 
 ul {
     display: flex;
@@ -225,13 +267,14 @@ h1 {
 
 h2 {
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 600;
     color: var(--brand-color);
     margin: 20px 0 20px 0;
   }
 
 .inverse {
-    color: #ffffff;  
+    color: #ffffff;
+    font-weight: 300;
  } 
 
 h3 {
@@ -240,9 +283,23 @@ h3 {
     color: #ffffff;
   }  
 
+  span {
+    color: var(--brand-color);
+    height: auto;
+    line-height: 1.75;
+  }
 
-section {
-    text-align: left;
+section, article {
+    height: auto;
+    
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 40px;
+    flex-wrap: wrap;
 }
 
 .content-1 {
@@ -291,7 +348,7 @@ button {
   
 }
 
-footer {
+#footer-1 {
     background-color: #ffffff;
     color: var(--brand-color);
     grid-row: 2 / 3;
@@ -299,9 +356,16 @@ footer {
     grid-template-rows: 1fr 20%;
     padding-top: 65px;
 }
+#footer-2 {
+    grid-row: 3 / 4;
+}
 
 footer h2 {
     font-weight: 600;
+}
+
+footer ul {
+    height: inherit;
 }
 
 .contacts, .copyright {
