@@ -345,6 +345,11 @@ button {
   
 }
 
+button:hover {
+    box-shadow: 0 16px 40px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;  
+}
+
 #footer-1 {
     background-color: #ffffff;
     color: var(--brand-color);
@@ -385,6 +390,15 @@ footer ul {
     justify-content: space-around;
 }
 
+.contact-info li:not(:last-child):hover {
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
 li div {
     display: flex;
     flex-direction: column;
@@ -419,4 +433,8 @@ a, a:hover {
   }
 .copyright a {
     color: #959595;
+}
+
+.copyright li:first-child {
+    text-decoration: underline;
 }
