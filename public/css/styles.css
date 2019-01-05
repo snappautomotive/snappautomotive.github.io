@@ -388,6 +388,9 @@ footer ul {
     display: flex;  
     flex-direction: row;
     justify-content: space-around;
+    margin-right: 40px;
+
+
 }
 
 .contact-info li:not(:last-child):hover {
@@ -396,7 +399,10 @@ footer ul {
     box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
     cursor: pointer;
-    margin-right: 40px;
+    margin-left: -20px;
+    margin-top: -20px;
+    margin-right: 29px;
+    
 }
 
 li div {
