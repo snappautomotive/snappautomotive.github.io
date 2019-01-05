@@ -367,9 +367,18 @@ footer ul {
     height: inherit;
 }
 
-.contacts, .copyright {
-    padding-left: 119px;
+.contacts {
+    padding-left: 99px;
     padding-right: 97px;
+}
+
+.contacts h2 {
+    padding-left: 20px;
+}
+
+.copyright {
+    padding-left: 119px;
+    padding-right: 119px; 
 }
 
 .contact-info img {
@@ -380,7 +389,7 @@ footer ul {
 .contact-info {
     display: flex;
     justify-content: space-between;
-    margin: 64px auto;
+    margin: 44px auto;
     flex-shrink: 1;
     
 }
@@ -389,19 +398,20 @@ footer ul {
     flex-direction: row;
     justify-content: space-around;
     margin-right: 40px;
+    padding: 20px;
 
 
 }
 
 .contact-info li:not(:last-child):hover {
-    padding: 20px;
+    /*padding: 20px;*/
     border-radius: 16px;
     box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
     cursor: pointer;
-    margin-left: -20px;
+    /*margin-left: -20px;
     margin-top: -20px;
-    margin-right: 29px;
+    margin-right: 29px;*/
     
 }
 
