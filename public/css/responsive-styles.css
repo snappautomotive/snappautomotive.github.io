@@ -43,7 +43,7 @@
         justify-content: space-around;
     }
 
-    .contact-info li {
+    .contact-info a {
         margin-bottom: 31px;
     }
 

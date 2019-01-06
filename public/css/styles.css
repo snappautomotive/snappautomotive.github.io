@@ -186,12 +186,11 @@ body {
 
 #main-2 {
     grid-row: 2/3; 
-    padding-top: 69px;
+    /*padding-top: 69px;*/
     padding-left: 119px;
     padding-right: 97px;
    
 }
-
 
 #header-1 {
     grid-row: 1 / 2;
@@ -295,8 +294,12 @@ article {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding-top: 40px;
+    margin-top: 48px;
     flex-wrap: wrap;
+}
+
+article:last-child {
+    margin-bottom: 68px;
 }
 
 .content-1 {
@@ -397,21 +400,19 @@ footer ul {
     display: flex;  
     flex-direction: row;
     justify-content: space-around;
-    margin-right: 40px;
     padding: 20px;
 
 
 }
+ .contact-info a {
+    margin-right: 40px;
+ }
 
-.contact-info li:not(:last-child):hover {
-    /*padding: 20px;*/
+.contact-info a:not(:last-child):hover {
     border-radius: 16px;
     box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
     cursor: pointer;
-    /*margin-left: -20px;
-    margin-top: -20px;
-    margin-right: 29px;*/
     
 }
 
