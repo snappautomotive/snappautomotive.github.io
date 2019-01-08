@@ -11,13 +11,28 @@
 
 }
 
-@media screen and (max-width: 1920px)
-
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1920px) {
 
 }
 
+@media screen and (max-width: 980px) {
+
+
+    ul.social.icons li:not(first-child) {
+        margin-left: -70px;
+        
+        
+
+    }
+
+    /* ul.social.icons {
+        overflow: visible;
+    } */
+}
+
 @media screen and (max-width: 736px) {
+
+
      
     #main-1, #main-2, #header-2, .contacts, .copyright {
         padding-left: 80px;
