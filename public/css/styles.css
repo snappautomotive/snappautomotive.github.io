@@ -254,6 +254,15 @@ ul {
     height: 44px;
 }
 
+ul.deck {
+    display: none;
+}
+
+ul.deck img {
+    width: 40px;
+    height: 24px;
+}
+
 h1 {
     font-weight: bold;
     font-size: 56px;

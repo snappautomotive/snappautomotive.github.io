@@ -18,16 +18,6 @@
 @media screen and (max-width: 980px) {
 
 
-    ul.social.icons li:not(first-child) {
-        margin-left: -70px;
-        
-        
-
-    }
-
-    /* ul.social.icons {
-        overflow: visible;
-    } */
 }
 
 @media screen and (max-width: 736px) {
@@ -39,17 +29,24 @@
      
     }
 
-    .icons-wrapper {
-        flex-direction: column;
+   .icons-wrapper {
+        flex-direction: row;
         justify-content: space-between;
     }
-
     ul.social.icons {
-        justify-content: flex-start;
+       display: none;
+
+}
+
+    ul.deck {
+        display: flex;
+        justify-content: flex-end;
     }
-    ul.social.icons li {
-        padding: 1em 3em 0 0;
-    }
+
+    ul.deck li {
+        display: inline-block;
+        width: 40px;
+      }
 
 
     .contact-info {
@@ -97,6 +94,11 @@
         width: 24px;
         height: 24px;
     }  
+
+    ul.deck img {
+        width: 40px;
+        height: 24px;
+    }
    
     #footer-1 {
         padding-top: 0px;
