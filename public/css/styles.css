@@ -89,6 +89,35 @@ section {
     display: block;
 }
 
+/*drop down menu*/
+menu {
+    padding: 15px 15px;
+    display: block;
+}
+li.menu-line {
+    width: 100% !important;
+    height: 21%;
+}
+img.menu-ico {
+    width: 32px !important;
+    height: 32px !important;
+    float: left;
+    margin-right: 16px;
+}
+menu, ul, li, a, .menu-text-link {
+    color: #fff;
+    margin-top: 8px;
+}
+.menu-close-btn {
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    left: 92%;
+    font-weight: 300;
+    top: 0;
+}
+
+
 body {
     line-height: 1;
 }

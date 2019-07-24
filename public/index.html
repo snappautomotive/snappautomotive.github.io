@@ -15,10 +15,9 @@
     <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:300,400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive-styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
-
 <body>
-
     <div id="page-1" class="container">
         <main id="main-1">
           <header id="header-1">
@@ -50,17 +49,41 @@
                </ul>
                <ul class="deck">
                   <li><a href="index.html" target="_self"><img src="assets/twitter-copy.svg"></a>
-                    <aside class="overlay">
-                        <menu class="menu"></menu>
+                    <aside id="#overlay" class="overlay">
+                        <menu class="menu">
+                            <li class="menu-close-btn">&times;</li>
+                            <li class="menu-line">
+                                <a class="menu-line-link" href="https://play.google.com/store/apps/developer?id=Snapp+Mobile+Germany+GmbH" target="_blank">
+                                   <img class="menu-ico" src="assets/ic-social-googleplay-inverse.svg" alt="google play icon">
+                                   <p class="menu-text-link">Google Play</p>
+                                </a>
+                           </li>
+                            <li class="menu-line">
+                                <a class="menu-line-link" href="https://www.apple.com/lae/ios/app-store/" target="_blank">
+                                   <img class="menu-ico" src="assets/ic-social-apple-inverse.svg" alt="google play icon">
+                                   <p class="menu-text-link">App Store</p>
+                                </a>
+                           </li>
+                            <li class="menu-line">
+                                <a class="menu-line-link" href="https://www.linkedin.com/company/snapp-mobile-gmbh" target="_blank">
+                                   <img class="menu-ico" src="assets/ic-social-linkedin-inverse.svg" alt="google play icon">
+                                   <p class="menu-text-link">LinkedIn</p>
+                                </a>
+                           </li>
+                            <li class="menu-line">
+                                <a class="menu-line-link" href="https://twitter.com/snappmobile_io" target="_blank">
+                                   <img class="menu-ico" src="assets/ic-social-twitter-inverse.svg" alt="google play icon">
+                                   <p class="menu-text-link">Twitter</p>
+                                </a>
+                           </li>
+
+                        </menu>
                     </aside>
                   </li>
-                  
                </ul>
-            </div>  
-
+            </div>
           </header>
-       
-        
+
           <section class="content-1">
             <h1>Hello!</h1>
             <h2 class="inverse">Companies hire us to build fantastic iOS and Android apps.</h2>
@@ -106,7 +129,6 @@
                         </div>
                     </li>
                   </ul>
-
             </section>
             <ul class="copyright">
                 <li><a href="impressum.html" target="_self">Impressum</a></li>
