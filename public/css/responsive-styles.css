@@ -45,6 +45,9 @@
         justify-content: space-around;
         align-items: flex-start;
     }
+    .copyright li:first-child {
+        margin-top: 10px;
+    }
     #page-1.container {
         grid-template-rows: 1fr 2fr;
     }
@@ -55,13 +58,16 @@
 
 @media screen and (max-width: 480px) {
      #main-1, #main-2, #header-2, .contacts, .copyright {
-        padding: 20px 40px 40px;
+        padding: 30px 40px 40px;
+    }
+    .copyright {
+        height: fit-content;
     }
     .copyright li:first-child {
-        padding: 20px 0;
+        padding: 15px 0;
     }
     .copyright li:first-child {
-        padding-bottom: 20px;
+        padding-bottom: 30px;
     }
     .logo img {
         width: 121px;
