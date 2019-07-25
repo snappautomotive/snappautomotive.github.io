@@ -163,11 +163,11 @@ section {
     box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.1);
     background-color: var(--modal-color);
     max-width: 100%;
-    width: 328px;
-    height: 255px;
+    width: 370px;
+    height: 265px;
     padding: 0 15px;
     position: fixed;
-    left: calc(50% - 165px);
+    left: calc(50% - 185px);
     top: 3%;
     z-index: 999;
     pointer-events: auto;
