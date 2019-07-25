@@ -58,7 +58,7 @@
 
 @media screen and (max-width: 480px) {
      #main-1, #main-2, #header-2, .contacts, .copyright {
-        padding: 20px 40px;
+        padding: 20px 40px 60px;
     }
     .copyright li:first-child {
         padding: 20px 0;

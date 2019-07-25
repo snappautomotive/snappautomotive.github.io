@@ -96,7 +96,7 @@ menu {
 }
 li.menu-line {
     width: 100% !important;
-    height: 21%;
+    height: 26%;
 }
 img.menu-ico {
     width: 32px !important;
@@ -104,9 +104,9 @@ img.menu-ico {
     float: left;
     margin-right: 16px;
 }
-menu, ul, li, a, .menu-text-link {
+.menu-text-link {
     color: #fff;
-    margin-top: 8px;
+    margin-top: 6px;
 }
 .menu-close-btn {
     position: absolute;
@@ -116,7 +116,6 @@ menu, ul, li, a, .menu-text-link {
     font-weight: 300;
     top: 0;
 }
-
 
 body {
     line-height: 1;
@@ -444,6 +443,7 @@ footer ul {
 }
  .contact-info a {
     margin-right: 40px;
+     white-space: nowrap;
  }
 
 .contact-info a:not(:last-child):hover {
