@@ -204,7 +204,7 @@ a.modal-line-link:hover {
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
-    letter-spacing: 2.1px;
+    letter-spacing: 0.1px;
     color: var(--white-color);
     padding: 10px 0;
 }
@@ -311,7 +311,6 @@ body {
     /*padding-top: 69px;*/
     padding-left: 119px;
     padding-right: 97px;
-   
 }
 
 #header-1 {
@@ -508,7 +507,7 @@ footer ul {
 }
 
 .contact-info {
-    display: flex;
+    /*display: flex;*/
     justify-content: space-between;
     margin: 44px auto;
     flex-shrink: 1;
@@ -530,6 +529,9 @@ footer ul {
     box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.1);
     background-color: var(--white-color);
     cursor: pointer;
+}
+.contact-info:last-child {
+    white-space: nowrap;
 }
 
 li div {
