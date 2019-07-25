@@ -24,15 +24,9 @@
    }
     ul.social.icons {
        display: none;
-
     }
-    ul.deck {
-        display: flex;
-        justify-content: flex-end;
-    }
-    ul.deck li {
-        display: inline-block;
-        width: 40px;
+    .modal-container {
+        display: block;
     }
     .contact-info {
         display: flex;
@@ -74,10 +68,6 @@
         width: 24px;
         height: 24px;
     }
-    ul.deck img {
-        width: 40px;
-        height: 24px;
-    }
     #footer-1 {
         padding-top: 0px;
     }
@@ -88,77 +78,6 @@
         width: 211px;
         height: 40px;
         font-size: 16px;
-    }
-
-
-    /* Over, attemp 1 */
-    /*
-        .overlay {
-            position: absolute;
-            bottom: 100%;
-            left: 0;
-            right: 0;
-            overflow: hidden;
-            width: 100%;
-            height: 100%;
-            transition: .5s ease;
-            background-color: rgba(0, 0, 0, 0.2);
-          }
-
-          ul.deck:focus .overlay,
-          ul.deck:hover .overlay {
-            height: 100%;
-            width: 100%;
-            bottom: 0;
-          }
-
-        .menu {
-        position: absolute;
-        overflow: hidden;
-        right: 1%;
-        left: 1%;
-        top: 1%;
-        transition: .5s ease;
-        background-color: #6461ff;
-        width: 98%;
-        height: 218px;
-
-        }
-        /*
-
-
-    /* Over, attemp 2 */
-
-    .overlay {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        padding-left: 4%; /* Location of menu*/
-        padding-right: 4%; /* Location of menu */
-        padding-top: 4%; /* Location of menu */
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgba(0,0,0,0.2);
-    }
-    menu {
-      position: relative;
-      background-color: #6461ff;
-      /*padding: 0;*/
-      border-radius: 8px;
-      box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.1);
-      width: auto;
-      height: 218px;
-      -webkit-animation-name: animatetop;
-      -webkit-animation-duration: 0.4s;
-      animation-name: animatetop;
-      animation-duration: 0.4s
-    }
-    ul.deck:focus .overlay,
-    ul.deck:hover .overlay {
-        display: inline-block;
     }
     @-webkit-keyframes animatetop {
         from {top:-200px; opacity:0} 

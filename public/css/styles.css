@@ -89,33 +89,126 @@ section {
     display: block;
 }
 
-/*drop down menu*/
-menu {
-    padding: 15px 15px;
-    display: block;
+/*drop down menu (mobile)*/
+.modal-container {
+    padding-top: 0;
+    position: relative;
+    top: -15px;
+    width: auto;
+    height: 100%;
+    display: none;
 }
-li.menu-line {
-    width: 100% !important;
-    height: 26%;
+.modal-container .modal-btn {
+    display: contents;
+    margin: 10px auto;
+    color: var(--white-color);
+    line-height: 50px;
+    width: 42px;
+    height: 42px;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    text-align: center;
 }
-img.menu-ico {
-    width: 32px !important;
-    height: 32px !important;
-    float: left;
-    margin-right: 16px;
+.modal-btn {
+    border-radius: 50px;
 }
-.menu-text-link {
-    color: #fff;
-    margin-top: 6px;
+.modal-btn img {
+    margin-top: 20px;
 }
-.menu-close-btn {
+.modal-container .modal-content, .modal-container .modal-backdrop {
+    height: 0;
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in;
+}
+.modal-container .modal-close {
+    color: var(--white-color);
     position: absolute;
-    color: #fff;
-    font-size: 24px;
-    left: 92%;
-    font-weight: 300;
-    top: 0;
+    right: 5px;
+    top: 5px;
+    padding-top: 3px;
+    background:  var(--modal-color);
+    font-size: 16px;
+    width: 25px;
+    height: 25px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
 }
+.modal-container .modal-close:hover {
+    color: var(--modal-backdrop);
+}
+.modal-container #modal-toggle {
+    display: none;
+}
+.modal-container #modal-toggle.active ~ .modal-backdrop, .modal-container #modal-toggle:checked ~ .modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.2s ease-in;
+}
+.modal-container #modal-toggle.active ~ .modal-content, .modal-container #modal-toggle:checked ~ .modal-content {
+    opacity: 1;
+    border-radius: 8px;
+    box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.1);
+    background-color: var(--modal-color);
+    max-width: 100%;
+    width: 328px;
+    height: 218px;
+    padding: 0 15px;
+    position: fixed;
+    left: calc(50% - 165px);
+    top: 5%;
+    z-index: 999;
+    pointer-events: auto;
+    cursor: auto;
+    visibility: visible;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+ul.modal-content-list, li.modal-line, a.modal-line-link {
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    height: 100%;
+}
+li.modal-line, a.modal-line-link {
+    width: 100%;
+    height: auto;
+    white-space: nowrap;
+}
+a.modal-line-link:hover {
+    color: var(--white-color);
+}
+.modal-line-ico {
+    margin-right: 17px;
+    float: left;
+    width: 32px;
+    height: 32px;
+}
+.modal-text-link {
+    font-family: OverpassMono;
+    font-size: 14px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 2.1px;
+    color: var(--white-color);
+    padding: 10px 0;
+}
+/*modal end*/
+
 
 body {
     line-height: 1;
@@ -152,10 +245,12 @@ body {
 
 :root {
     --brand-color: #4640f2;
+    --modal-color: #6461ff;
+    --modal-backdrop: #333333;
+    --white-color: #ffffff;
 }
 
 /* Box Model */
-
 *,
 *:before,
 *:after {
@@ -165,7 +260,6 @@ body {
 }
 
 /* Containers */
-
 #page-1.container {
     width: 100%;
     display: grid;
@@ -191,7 +285,7 @@ body {
     font-family: 'Overpass Mono';
     font-size: 14px;
     font-weight: 400;
-    color: #ffffff;
+    color: var(--white-color);
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
@@ -223,7 +317,6 @@ body {
 #header-1 {
     grid-row: 1 / 2;
     grid-column: 1 / -1;
-    
 }
 
 .icons-wrapper {
@@ -247,7 +340,6 @@ body {
     background-size: cover;
 }
 
-
 ul {
     display: flex;
     flex-direction: row;
@@ -260,7 +352,6 @@ ul {
     font: inherit;
     vertical-align: baseline;
   }
-  
   .logo img {
     width: 222px;
     height: 44px;
@@ -277,27 +368,11 @@ ul {
     width: 85px;
   }
 
-.social.icons img {
-    width: 44px;
-    height: 44px;
-}
-
-ul.deck {
-    display: none;
-}
-
-ul.deck img {
-    width: 40px;
-    height: 24px;
-}
-
 h1 {
     font-weight: bold;
     font-size: 56px;
     -webkit-text-stroke: 1px #ffffff;
 }
-
-
 h2 {
     font-size: 20px;
     font-weight: 700;
@@ -306,14 +381,14 @@ h2 {
   }
 
 .inverse {
-    color: #ffffff;
+    color: var(--white-color);
     font-weight: 600;
  } 
 
 h3 {
     font-size: 14px;
     font-weight: bold;
-    color: #ffffff;
+    color:var(--white-color);
   }  
 
   span {
@@ -376,13 +451,12 @@ button {
     color: var(--brand-color);
     width: 245px;
     height: 56px;
-    background-color: #ffffff;
+    background-color: var(--white-color);
     border-style: none;
     border-radius: 39.5px;
     box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.1);
     padding-top: 0.2em;
     margin: 20px 0 20px 0;
-  
 }
 
 button:hover {
@@ -391,7 +465,7 @@ button:hover {
 }
 
 #footer-1 {
-    background-color: #ffffff;
+    background-color: var(--white-color);
     color: var(--brand-color);
     grid-row: 2 / 3;
     display: grid;
@@ -438,8 +512,6 @@ footer ul {
     flex-direction: row;
     justify-content: space-around;
     padding: 20px;
-
-
 }
  .contact-info a {
     margin-right: 40px;
@@ -449,9 +521,8 @@ footer ul {
 .contact-info a:not(:last-child):hover {
     border-radius: 16px;
     box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
+    background-color: var(--white-color);
     cursor: pointer;
-    
 }
 
 li div {
@@ -464,7 +535,6 @@ li div {
 div>h3 {
     color: var(--brand-color);
     margin: 0 0 10px;
-    
 }
 
 .copyright {
@@ -473,14 +543,12 @@ div>h3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .copyright li {
     width: auto;
     height: auto;
 }
-
 
 a, a:hover {
     text-decoration: none;
