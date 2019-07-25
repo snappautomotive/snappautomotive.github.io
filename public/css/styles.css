@@ -74,7 +74,6 @@ video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    /*font-family: OverpassMono;*/
 }
 
 article,
@@ -165,11 +164,11 @@ section {
     background-color: var(--modal-color);
     max-width: 100%;
     width: 328px;
-    height: 218px;
+    height: 255px;
     padding: 0 15px;
     position: fixed;
     left: calc(50% - 165px);
-    top: 5%;
+    top: 3%;
     z-index: 999;
     pointer-events: auto;
     cursor: auto;
@@ -199,7 +198,6 @@ a.modal-line-link:hover {
     height: 32px;
 }
 .modal-text-link {
-    /*font-family: OverpassMono;*/
     font-size: 14px;
     font-style: normal;
     font-stretch: normal;
@@ -209,7 +207,6 @@ a.modal-line-link:hover {
     padding: 10px 0;
 }
 /*modal end*/
-
 
 body {
     line-height: 1;
@@ -308,7 +305,6 @@ body {
 
 #main-2 {
     grid-row: 2/3; 
-    /*padding-top: 69px;*/
     padding-left: 119px;
     padding-right: 97px;
 }
@@ -398,7 +394,6 @@ h3 {
 
 section, article {
     height: auto;
-    
 }
 
 article {
@@ -507,7 +502,7 @@ footer ul {
 }
 
 .contact-info {
-    /*display: flex;*/
+    display: flex;
     justify-content: space-between;
     margin: 44px auto;
     flex-shrink: 1;
