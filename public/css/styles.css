@@ -163,11 +163,11 @@ section {
     box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.1);
     background-color: var(--modal-color);
     max-width: 100%;
-    width: 370px;
+    width: 325px;
     height: 265px;
     padding: 0 15px;
     position: fixed;
-    left: calc(50% - 185px);
+    left: calc(50% - 162px);
     top: 3%;
     z-index: 999;
     pointer-events: auto;
@@ -472,7 +472,6 @@ button:hover {
     display: grid;
     grid-template-rows: 1fr 96px;
     padding-top: 65px;
-
 }
 #footer-2 {
     grid-row: 3 / 4;
@@ -515,7 +514,7 @@ footer ul {
     padding: 20px;
 }
  .contact-info a {
-    margin-right: 40px;
+    /*margin-right: 40px;*/
      white-space: nowrap;
  }
 
@@ -525,7 +524,7 @@ footer ul {
     background-color: var(--white-color);
     cursor: pointer;
 }
-.contact-info:last-child {
+.contact-info li:last-child {
     white-space: nowrap;
 }
 

@@ -39,6 +39,9 @@
     .contact-info a {
         margin-bottom: 31px;
     }
+    .contact-info li:last-child {
+        white-space: normal;
+    }
     .copyright {
         display: flex;
         flex-direction: column;
