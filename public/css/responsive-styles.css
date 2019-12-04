@@ -7,94 +7,96 @@
 @media screen and (min-width: 2680px) {
    .container {
       max-width: 3000px;
+    }
 }
 
-}
+@media screen and (max-width: 1920px) {}
 
-@media screen and (max-width: 1920px)
-
-@media screen and (max-width: 980px) {
-
-}
+@media screen and (max-width: 980px) {}
 
 @media screen and (max-width: 736px) {
-     
     #main-1, #main-2, #header-2, .contacts, .copyright {
         padding-left: 80px;
-     
     }
-
-    .icons-wrapper {
-        flex-direction: column;
+   .icons-wrapper {
+        flex-direction: row;
         justify-content: space-between;
+   }
+    .content-1 {
+        margin-bottom: 60px;
     }
-
     ul.social.icons {
-        justify-content: flex-start;
+       display: none;
     }
-    ul.social.icons li {
-        padding: 1em 3em 0 0;
+    .modal-container {
+        display: block;
     }
-
-
     .contact-info {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
     }
-
     .contact-info a {
         margin-bottom: 31px;
     }
-
+    .contact-info li:last-child {
+        white-space: normal;
+    }
     .copyright {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: flex-start;
-    
-
-        }
-
-        #page-1.container {
-            grid-template-rows: 1fr 2fr;
-        }
-    
-        #main-1 {
-            grid-template-rows: 15% 1fr;
-        }   
-
-   
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .copyright li:first-child {
+        margin-top: 10px;
+    }
+    #page-1.container {
+        grid-template-rows: 1fr 2fr;
+    }
+    #main-1 {
+        grid-template-rows: 15% 1fr;
+    }
 }
 
 @media screen and (max-width: 480px) {
-
      #main-1, #main-2, #header-2, .contacts, .copyright {
-        padding: 20px 40px;
+        padding: 30px 40px 40px;
     }
-
+    .copyright {
+        height: fit-content;
+    }
+    .copyright li:first-child {
+        padding: 15px 0;
+    }
+    .copyright li:first-child {
+        padding-bottom: 30px;
+    }
     .logo img {
         width: 121px;
         height: 24px;
-      }
-
+    }
     .social.icons img {
         width: 24px;
         height: 24px;
-    }  
-   
-    #footer-1 {
-        padding-top: 0px;
     }
-
+    #footer-1 {
+        padding-top: 0;
+    }
     h1 {
         font-size: 36px;
     }
-
     button {
         width: 211px;
         height: 40px;
         font-size: 16px;
     }
-
+    @-webkit-keyframes animatetop {
+        from {top:-200px; opacity:0} 
+        to {top:0; opacity:1}
+    }
+    @keyframes animatetop {
+        from {top:-200px; opacity:0}
+        to {top:0; opacity:1}
+    }
 }

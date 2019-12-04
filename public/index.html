@@ -16,49 +16,78 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive-styles.css">
 </head>
-
 <body>
-
     <div id="page-1" class="container">
         <main id="main-1">
-          <header id="header-1">
-            <div class="icons-wrapper">
-               <ul class="logo">
-                  <li><a href="index.html" target="_self"><img src="assets/ic-logotype-white-no-bounds.svg"></a></li>
-               </ul>
-               <ul class="social icons">
-                <li><a class="icon" href="https://twitter.com/" target="_blank">
-                  <img src="assets/ic-social-twitter-inverse.svg"
-                  onmouseover="this.src='assets/ic-social-twitter-inverse-pressed.svg';"
-                  onmouseout="this.src='assets/ic-social-twitter-inverse.svg';">
-                </a></li>
-                <li><a class="icon" href="https://www.linkedin.com/" target="_blank">
-                  <img src="assets/ic-social-linkedin-inverse.svg"
-                  onmouseover="this.src='assets/ic-social-linkedin-inverse-pressed.svg';"
-                  onmouseout="this.src='assets/ic-social-linkedin-inverse.svg';">
-                </a></li>
-                <li><a class="icon" href="https://www.apple.com/lae/ios/app-store/" target="_blank">
-                  <img src="assets/ic-social-apple-inverse.svg"
-                  onmouseover="this.src='assets/ic-social-apple-inverse-pressed.svg';"
-                  onmouseout="this.src='assets/ic-social-apple-inverse.svg';">
-                </a></li>
-                <li><a class="icon" href="https://play.google.com/store" target="_blank">
-                  <img src="assets/ic-social-googleplay-inverse.svg"
-                  onmouseover="this.src='assets/ic-social-googleplay-inverse-pressed.svg';"
-                  onmouseout="this.src='assets/ic-social-googleplay-inverse.svg';">
-                </a></li>
-               </ul>
-            </div>  
+            <header id="header-1">
+                <div class="icons-wrapper">
+                    <ul class="logo">
+                        <li><a href="index.html" target="_self"><img src="assets/ic-logotype-white-no-bounds.svg"></a></li>
+                    </ul>
+                    <ul class="social icons">
+                        <li><a class="icon" href="https://twitter.com/snappmobile_io" target="_blank">
+                            <img src="assets/ic-social-twitter-inverse.svg"
+                              onmouseover="this.src='assets/ic-social-twitter-inverse-pressed.svg';"
+                              onmouseout="this.src='assets/ic-social-twitter-inverse.svg';">
+                        </a></li>
+                        <li><a class="icon" href="https://www.linkedin.com/company/snapp-mobile-gmbh" target="_blank">
+                            <img src="assets/ic-social-linkedin-inverse.svg"
+                              onmouseover="this.src='assets/ic-social-linkedin-inverse-pressed.svg';"
+                              onmouseout="this.src='assets/ic-social-linkedin-inverse.svg';">
+                        </a></li>
+                        <li><a class="icon" href="https://www.apple.com/lae/ios/app-store/" target="_blank">
+                            <img src="assets/ic-social-apple-inverse.svg"
+                              onmouseover="this.src='assets/ic-social-apple-inverse-pressed.svg';"
+                              onmouseout="this.src='assets/ic-social-apple-inverse.svg';">
+                        </a></li>
+                        <li><a class="icon" href="https://play.google.com/store/apps/dev?id=8707863073367231888" target="_blank">
+                            <img src="assets/ic-social-googleplay-inverse.svg"
+                              onmouseover="this.src='assets/ic-social-googleplay-inverse-pressed.svg';"
+                              onmouseout="this.src='assets/ic-social-googleplay-inverse.svg';">
+                        </a></li>
+                    </ul>
+                    <div class="modal-container">
+                        <input id="modal-toggle" type="checkbox">
+                        <label class="modal-btn" for="modal-toggle"><img src="assets/twitter-copy.svg"></label>
+                        <label class="modal-backdrop" for="modal-toggle"></label>
+                        <div class="modal-content">
+                            <label class="modal-close" for="modal-toggle">&#x2715;</label>
+                            <ul class="modal-content-list">
+                                 <li class="modal-line">
+                                     <a class="modal-line-link" href="https://play.google.com/store/apps/dev?id=8707863073367231888" target="_blank">
+                                         <img class="modal-line-ico" src="assets/ic-social-googleplay-inverse.svg" alt="google play icon">
+                                         <p class="modal-text-link">Google Play</p>
+                                     </a>
+                                </li>
+                                <li class="modal-line">
+                                    <a class="modal-line-link" href="https://www.apple.com/lae/ios/app-store/" target="_blank">
+                                        <img class="modal-line-ico" src="assets/ic-social-apple-inverse.svg" alt="google play icon">
+                                        <p class="modal-text-link">App Store</p>
+                                    </a>
+                                </li>
+                                <li class="modal-line">
+                                    <a class="modal-line-link" href="https://www.linkedin.com/company/snapp-mobile-gmbh" target="_blank">
+                                       <img class="modal-line-ico" src="assets/ic-social-linkedin-inverse.svg" alt="google play icon">
+                                       <p class="modal-text-link">LinkedIn</p>
+                                    </a>
+                               </li>
+                                <li class="modal-line">
+                                    <a class="modal-line-link" href="https://twitter.com/snappmobile_io" target="_blank">
+                                       <img class="modal-line-ico" src="assets/ic-social-twitter-inverse.svg" alt="google play icon">
+                                       <p class="modal-text-link">Twitter</p>
+                                    </a>
+                               </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
 
-          </header>
-       
-        
-          <section class="content-1">
-            <h1>Hello!</h1>
-            <h2 class="inverse">Companies hire us to build fantastic iOS and Android apps.</h2>
-            <a href="https://medium.com/snapp-mobile" target="_blank"><button>Read more about us</button></a>
-          </section>
-        
+            <section class="content-1">
+                <h1>Hello!</h1>
+                <h2 class="inverse">Companies hire us to build fantastic iOS and Android apps.</h2>
+                <a href="https://medium.com/snapp-mobile" target="_blank"><button>Read more about us</button></a>
+            </section>
 
         <!-- For future use
           <section class="content-2">Section 2</section>  
@@ -78,7 +107,7 @@
                       </div>
                     </li></a>
                     <a href="mailto:hello@snappmobile.io">
-                    <li> 
+                    <li>
                       <img src="assets/ic-contact-mail.svg">
                       <div>
                        <h3>E-mail</h3>hello@snappmobile.io
@@ -89,7 +118,7 @@
                       <img src="assets/ic-contact-phone.svg">
                       <div>
                        <h3>Phone</h3>+49 176 7788 3694
-                      </div> 
+                      </div>
                     </li></a>
                     <li>
                         <img src="assets/ic-contact-fax.svg">
@@ -98,7 +127,6 @@
                         </div>
                     </li>
                   </ul>
-
             </section>
             <ul class="copyright">
                 <li><a href="impressum.html" target="_self">Impressum</a></li>
@@ -106,9 +134,6 @@
             </ul>
         </footer>
     </div>
-
     <script src="js/scripts.js"></script>
-
 </body>
-
 </html>
