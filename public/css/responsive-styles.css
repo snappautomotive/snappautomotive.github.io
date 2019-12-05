@@ -63,6 +63,9 @@
     #main-1, #main-2, #header-2, .contacts, .copyright {
         padding: 30px 40px 40px;
     }
+    .modal-content {
+        right: 0 !important;
+    }
     .copyright {
         height: fit-content;
     }
