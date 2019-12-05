@@ -5,8 +5,8 @@
 /*Breakpoints*/
 
 @media screen and (min-width: 2680px) {
-   .container {
-      max-width: 3000px;
+    .container {
+        max-width: 3000px;
     }
 }
 
@@ -18,15 +18,15 @@
     #main-1, #main-2, #header-2, .contacts, .copyright {
         padding-left: 80px;
     }
-   .icons-wrapper {
+    .icons-wrapper {
         flex-direction: row;
         justify-content: space-between;
-   }
+    }
     .content-1 {
         margin-bottom: 60px;
     }
     ul.social.icons {
-       display: none;
+        display: none;
     }
     .modal-container {
         display: block;
@@ -60,7 +60,7 @@
 }
 
 @media screen and (max-width: 480px) {
-     #main-1, #main-2, #header-2, .contacts, .copyright {
+    #main-1, #main-2, #header-2, .contacts, .copyright {
         padding: 30px 40px 40px;
     }
     .copyright {
@@ -92,7 +92,7 @@
         font-size: 16px;
     }
     @-webkit-keyframes animatetop {
-        from {top:-200px; opacity:0} 
+        from {top:-200px; opacity:0}
         to {top:0; opacity:1}
     }
     @keyframes animatetop {
