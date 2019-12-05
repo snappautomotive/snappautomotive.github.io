@@ -10,12 +10,12 @@ div,
 span,
 object,
 iframe,
-/*h1,
-h2,
-h3,
-h4,
-h5,
-h6,*/
+    /*h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,*/
 p,
 blockquote,
 a,
@@ -162,21 +162,22 @@ section {
     border-radius: 8px;
     box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.1);
     background-color: var(--modal-color);
-    max-width: 100%;
-    width: 325px;
+    /*max-width: 100%;*/
+    width: calc(100vw - 80px);
     height: 265px;
     padding: 0 15px;
-    position: fixed;
-    left: calc(50% - 162px);
+    position: absolute;
+    right: -55px;
+    /*left: calc(50% - 162px);*/
     top: 3%;
-    z-index: 999;
+    z-index: 10;
     pointer-events: auto;
     cursor: auto;
     visibility: visible;
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s
+    /*-webkit-animation-name: animatetop;*/
+    /*-webkit-animation-duration: 0.4s;*/
+    /*animation-name: animatetop;*/
+    /*animation-duration: 0.4s*/
 }
 ul.modal-content-list, li.modal-line, a.modal-line-link {
     flex-wrap: wrap;
@@ -265,7 +266,7 @@ body {
     margin-right: auto;
     grid-template-rows: 2fr 1fr;
     grid-gap: 0rem;
-    
+
 }
 
 #page-2.container {
@@ -276,7 +277,7 @@ body {
     grid-template-rows: 3fr 6fr 96px;
     grid-template-columns: none;
     grid-gap: 0rem;
-    
+
 }
 
 body {
@@ -298,13 +299,13 @@ body {
     padding-top: 69px;
     padding-left: 119px;
     padding-right: 97px;
-    background: linear-gradient(114deg, rgba(92,91,255, 0.7), 
+    background: linear-gradient(114deg, rgba(92,91,255, 0.7),
     rgba(70,64,242, 0.7)), url('../assets/bg-header.svg');
     background-size: cover;
 }
 
 #main-2 {
-    grid-row: 2/3; 
+    grid-row: 2/3;
     padding-left: 119px;
     padding-right: 97px;
 }
@@ -330,7 +331,7 @@ body {
     padding-top: 69px;
     padding-left: 119px;
     padding-right: 97px;
-    background: linear-gradient(114deg, rgba(92,91,255, 0.7), 
+    background: linear-gradient(114deg, rgba(92,91,255, 0.7),
     rgba(70,64,242, 0.7)), url('../assets/bg-header.svg');
     background-size: cover;
 }
@@ -346,22 +347,22 @@ ul {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-  }
-  .logo img {
+}
+.logo img {
     width: 222px;
     height: 44px;
-  }
+}
 
-  ul.social.icons {
-      display: flex;
-      justify-content: flex-end;
-  }
+ul.social.icons {
+    display: flex;
+    justify-content: flex-end;
+}
 
-  ul.social.icons li {
+ul.social.icons li {
     display: inline-block;
     padding: 0 0 0 3em;
     width: 85px;
-  }
+}
 
 h1 {
     font-weight: bold;
@@ -373,24 +374,24 @@ h2 {
     font-weight: 700;
     color: var(--brand-color);
     margin: 20px 0 20px 0;
-  }
+}
 
 .inverse {
     color: var(--white-color);
     font-weight: 600;
- } 
+}
 
 h3 {
     font-size: 14px;
     font-weight: bold;
     color:var(--white-color);
-  }  
+}
 
-  span {
+span {
     color: var(--brand-color);
     height: auto;
     line-height: 1.75;
-  }
+}
 
 section, article {
     height: auto;
@@ -437,15 +438,15 @@ article:last-child {
 */
 
 button {
+    appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
-    -ms-appearance: none;
-    appearance: none;
+    /*-ms-appearance: none;*/
     outline: 0;
     text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
-    /*font-family: 'Overpass Mono';*/
+    font-family: 'Overpass Mono';
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 0px;
@@ -456,13 +457,14 @@ button {
     border-style: none;
     border-radius: 39.5px;
     box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.1);
-    padding-top: 0.2em;
+    padding: 0.2em 15px 0 15px;
+    white-space: nowrap;
     margin: 20px 0 20px 0;
 }
 
 button:hover {
     box-shadow: 0 16px 40px 0 rgba(0, 0, 0, 0.2);
-    cursor: pointer;  
+    cursor: pointer;
 }
 
 #footer-1 {
@@ -492,7 +494,7 @@ footer ul {
 
 .copyright {
     padding-left: 119px;
-    padding-right: 119px; 
+    padding-right: 119px;
 }
 
 .contact-info img {
@@ -505,18 +507,18 @@ footer ul {
     justify-content: space-between;
     margin: 44px auto;
     flex-shrink: 1;
-    
+
 }
 .contact-info li {
-    display: flex;  
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 20px;
 }
- .contact-info a {
+.contact-info a {
     /*margin-right: 40px;*/
-     white-space: nowrap;
- }
+    white-space: nowrap;
+}
 
 .contact-info a:not(:last-child):hover {
     border-radius: 16px;
@@ -556,7 +558,7 @@ div>h3 {
 a, a:hover {
     text-decoration: none;
     color: var(--brand-color);
-  }
+}
 .copyright a {
     color: #959595;
 }
