@@ -300,7 +300,7 @@ body {
     padding-left: 119px;
     padding-right: 97px;
     background: linear-gradient(114deg, rgba(92,91,255, 0.7),
-    rgba(70,64,242, 0.7)), url('../assets/bg-header.svg');
+    rgba(70,64,242, 0.7)), url('../assets/bg-header-graphic.jpg');
     background-size: cover;
 }
 
@@ -332,7 +332,7 @@ body {
     padding-left: 119px;
     padding-right: 97px;
     background: linear-gradient(114deg, rgba(92,91,255, 0.7),
-    rgba(70,64,242, 0.7)), url('../assets/bg-header.svg');
+    rgba(70,64,242, 0.7)), url('../assets/bg-header-graphic.jpg');
     background-size: cover;
 }
 
