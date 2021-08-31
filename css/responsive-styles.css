@@ -55,7 +55,8 @@
         grid-template-rows: 1fr 2fr;
     }
     #main-1 {
-        grid-template-rows: 15% 1fr;
+        grid-template-rows: 5% 1fr;
+        grid-template-columns: 80%;
     }
 }
 
