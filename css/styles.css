@@ -211,6 +211,7 @@ a.modal-line-link:hover {
 
 body {
     line-height: 1;
+    background-color: #1A203B;
 }
 
 ol,
@@ -247,6 +248,10 @@ body {
     --modal-color: #6461ff;
     --modal-backdrop: #333333;
     --white-color: #ffffff;
+    --emphasis: #90FFFF;
+    --dark-content: #00092F;
+    --dark-content-hover: #071968;
+    --grey-content: #E5E5E5;
 }
 
 /* Box Model */
@@ -295,12 +300,11 @@ body {
     grid-row: 1/2;
     display: grid;
     grid-template-columns: 70% 1fr;
-    grid-template-rows: 15% repeat(2, 1fr);
+    
     padding-top: 69px;
     padding-left: 119px;
     padding-right: 97px;
-    background: linear-gradient(114deg, rgba(92,91,255, 0.7),
-    rgba(70,64,242, 0.7)), url('../assets/bg-header-graphic.jpg');
+    background: url('../assets/blur_background_01.png');
     background-size: cover;
 }
 
@@ -308,6 +312,15 @@ body {
     grid-row: 2/3;
     padding-left: 119px;
     padding-right: 97px;
+
+}
+
+#main-2 span {
+    color: var(--white-color);
+}
+
+#main-2 h2 {
+    color: var(--emphasis);
 }
 
 #header-1 {
@@ -331,8 +344,7 @@ body {
     padding-top: 69px;
     padding-left: 119px;
     padding-right: 97px;
-    background: linear-gradient(114deg, rgba(92,91,255, 0.7),
-    rgba(70,64,242, 0.7)), url('../assets/bg-header-graphic.jpg');
+    background: url('../assets/blur_background_01.png');
     background-size: cover;
 }
 
@@ -349,8 +361,21 @@ ul {
     vertical-align: baseline;
 }
 .logo img {
-    width: 325px;
-    height: 73px;
+
+    width: 100%;
+    max-width: 35px;
+    height: auto;
+    vertical-align:middle
+}
+
+.logo .header_text {
+    color: var(--white-color);
+    line-height: 36px;
+    margin-left: 20px;
+    font-size: 36px;
+    position: relative;
+    top: 9px;
+    font-weight: 900;
 }
 
 ul.social.icons {
@@ -367,7 +392,6 @@ ul.social.icons li {
 h1 {
     font-weight: bold;
     font-size: 56px;
-    -webkit-text-stroke: 1px #ffffff;
 }
 h2 {
     font-size: 20px;
@@ -393,6 +417,10 @@ span {
     line-height: 1.75;
 }
 
+span.emphasis {
+    color: var(--emphasis);
+}
+
 section, article {
     height: auto;
 }
@@ -415,12 +443,12 @@ article:last-child {
 }
 .content-1 a button {
     font-weight: 700;
-    margin-top: 60px;
+    
+    margin-bottom: 100px;
 }
 .content-1 h1 {
-    font-weight: bold;
-    font-size: 56px;
-    -webkit-text-stroke: 1px #ffffff;
+    font-weight: 600;
+    font-size: 80px;
 }
 /*
 .content-2 {
@@ -447,14 +475,14 @@ button {
     text-transform: uppercase;
     cursor: pointer;
     font-family: 'Overpass Mono';
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 0px;
-    color: var(--brand-color);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 8%;
+    color: var(--white-color);
     width: 245px;
     height: 56px;
-    background-color: var(--white-color);
-    border-style: none;
+    background-color: transparent;
+    border: 1px solid var(--emphasis);
     border-radius: 39.5px;
     box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.1);
     padding: 0.2em 15px 0 15px;
@@ -468,13 +496,14 @@ button:hover {
 }
 
 #footer-1 {
-    background-color: var(--white-color);
-    color: var(--brand-color);
+    background-color: var(--dark-content);
+    color: var(--white-color);
     grid-row: 2 / 3;
     display: grid;
     grid-template-rows: 1fr 96px;
     padding-top: 65px;
 }
+
 #footer-2 {
     grid-row: 3 / 4;
 }
@@ -486,6 +515,14 @@ footer ul {
 .contacts {
     padding-left: 99px;
     padding-right: 97px;
+}
+
+.contacts a {
+    color: var(--white-color);
+}
+
+.contacts h3 {
+    color: var(--emphasis);
 }
 
 .contacts h2 {
@@ -523,8 +560,9 @@ footer ul {
 .contact-info a:not(:last-child):hover {
     border-radius: 16px;
     box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.1);
-    background-color: var(--white-color);
+    background-color: var(--dark-content-hover);
     cursor: pointer;
+    color: #FFF;
 }
 .contact-info li:last-child {
     white-space: nowrap;
@@ -538,12 +576,11 @@ li div {
 }
 
 div>h3 {
-    color: var(--brand-color);
     margin: 0 0 10px;
 }
 
 .copyright {
-    background: #fafafa;
+    background: var(--dark-content);
     color: #959595;
     display: flex;
     align-items: center;
@@ -553,6 +590,7 @@ div>h3 {
 .copyright li {
     width: auto;
     height: auto;
+    opacity:30%;
 }
 
 a, a:hover {
@@ -560,9 +598,6 @@ a, a:hover {
     color: var(--brand-color);
 }
 .copyright a {
-    color: #959595;
-}
-
-.copyright li:first-child {
-    text-decoration: underline;
+    text-decoration: none;
+    color: var(--grey-content);
 }
