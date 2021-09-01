@@ -25,11 +25,32 @@
     .content-1 {
         margin-bottom: 60px;
     }
+    .content-1 h1 {
+        font-size: 52px;
+    }
+
+    .logo img {
+        width: 28px;
+        height: 28px;
+    }
+    .logo .header_text {
+        position: relative;
+        font-size: 20px;
+        top: 3px;
+        margin-left: 10px;
+    }
+
     ul.social.icons {
         display: none;
     }
     .modal-container {
         display: block;
+        right: -30px !important;
+    }
+
+    .modal-content {
+        right: 0 !important;
+        width: 80%;
     }
     .contact-info {
         display: flex;
@@ -65,7 +86,8 @@
         padding: 30px 40px 40px;
     }
     .modal-content {
-        right: 0 !important;
+        right: 100% !important;
+        width: 50%;
     }
     .copyright {
         height: fit-content;
@@ -77,8 +99,15 @@
         padding-bottom: 30px;
     }
     .logo img {
-        width: 121px;
-        height: 24px;
+        width: 28px;
+        height: 28px;
+    }
+    .logo .header_text {
+        font-size: 20px;
+        line-height: 36px;
+        position: relative;
+        top: 2px;
+        margin-left: 10px;
     }
     .social.icons img {
         width: 24px;
