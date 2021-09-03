@@ -500,8 +500,8 @@ button {
     text-transform: uppercase;
     cursor: pointer;
     font-size: 18px;
-    font-weight: 600;
-    letter-spacing: 8%;
+    
+    letter-spacing: 1.5px;
     color: var(--white-color);
     width: 245px;
     height: 56px;
