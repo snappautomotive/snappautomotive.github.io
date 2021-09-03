@@ -495,7 +495,7 @@ button {
     text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 600;
     letter-spacing: 8%;
     color: var(--white-color);
@@ -511,8 +511,10 @@ button {
 }
 
 button:hover {
-    box-shadow: 0 16px 40px 0 rgba(0, 0, 0, 0.2);
-    cursor: pointer;
+    /* box-shadow: 0 16px 40px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer; */
+    background-color: var(--emphasis);
+    color: #000;
 }
 
 #footer-1 {
