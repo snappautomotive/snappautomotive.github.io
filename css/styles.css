@@ -12,6 +12,17 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'silkasemibold';
+    src: url('../assets/fonts/silka-semibold-webfont.eot');
+    src: url('../assets/fonts/silka-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/silka-semibold-webfont.woff2') format('woff2'),
+         url('../assets/fonts/silka-semibold-webfont.woff') format('woff'),
+         url('../assets/fonts/silka-semibold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Reset default*/
 
 html,
@@ -438,6 +449,7 @@ article:last-child {
 }
 
 .content-1 {
+    font-family: 'silkasemibold';
     grid-row: 2 / 3;
     grid-column: 1 / 3;
     -webkit-user-select: none; /* Chrome/Safari */ 
