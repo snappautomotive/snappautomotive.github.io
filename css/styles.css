@@ -444,6 +444,10 @@ article {
     flex-wrap: wrap;
 }
 
+article span {
+    line-height: 1.8;
+}
+
 article:last-child {
     margin-bottom: 68px;
 }
