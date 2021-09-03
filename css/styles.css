@@ -314,7 +314,7 @@ body {
     padding-top: 69px;
     padding-left: 119px;
     padding-right: 97px;
-    background: url('../assets/blur_background_01.png');
+    background: url('../assets/SnappAutomotive_Backgrounds-01.png');
     background-size: cover;
 }
 
@@ -354,7 +354,7 @@ body {
     padding-top: 69px;
     padding-left: 119px;
     padding-right: 97px;
-    background: url('../assets/blur_background_01.png');
+    background: url('../assets/SnappAutomotive_Backgrounds-01.png');
     background-size: cover;
 }
 
@@ -373,20 +373,10 @@ ul {
 .logo img {
 
     width: 100%;
-    max-width: 35px;
+    max-width: 400px;
     height: auto;
-    vertical-align:middle
 }
 
-.logo .header_text {
-    color: var(--white-color);
-    line-height: 36px;
-    margin-left: 20px;
-    font-size: 36px;
-    position: relative;
-    top: 7px;
-    font-weight: 900;
-}
 
 ul.social.icons {
     display: flex;
@@ -618,4 +608,12 @@ a, a:hover {
 .copyright a {
     text-decoration: none;
     color: var(--grey-content);
+}
+
+.socialRegular {
+    display: block;
+}
+
+.socialSmall {
+    display: none;
 }
