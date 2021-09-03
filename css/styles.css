@@ -486,6 +486,7 @@ article:last-child {
 */
 
 button {
+    font-family: 'silkasemibold';
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -494,7 +495,6 @@ button {
     text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
-    font-family: 'silkaregular';
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 8%;
