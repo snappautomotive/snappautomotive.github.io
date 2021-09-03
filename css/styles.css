@@ -425,7 +425,7 @@ h3 {
 span {
     color: var(--brand-color);
     height: auto;
-    line-height: 1.75;
+    line-height: 1;
 }
 
 span.emphasis {
